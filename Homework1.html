@@ -1,0 +1,243 @@
+<!--
+Program name: Homework1.html
+Author: Julia Keifer
+Date created: June 15, 2026
+Date last edited: June 21, 2026
+Version: 8.3
+Description: a patient registration form for Sinclair Medical Office
+-->
+
+<!DOCTYPE html>
+<html lang = "en-US">
+
+<div>
+    <head>
+        <title>Sinclair Patient Registration</title>
+        <!-- links .css file -->
+        <link rel = "stylesheet" href = "style.css"> 
+        <!-- links JavaScript file -->
+        <script src = "script.js" defer></Script>
+    </head>
+
+<body>
+    <!-- calls the date/time function -->
+    <p><span id = "datetime" style = "float: right;"></span></p><br>
+    <!-- puts the dino :)-->
+    <img src = "sinclair.png" alt = "logo" style = "float: left; width: 15%; height: 15%;">
+    <h1 style = "font-size : 300%";> Sinclair Medical Office </h1>
+    <h2 style = "font-size : 120%";> Patient Registration Form </h2>
+</div>
+<hr>
+
+    <form  action = "thankyou.html">
+        <label for = 'fname'>Name:</label><br>
+        <!--(max 30 characters.)-->
+            <input type = "text" id = "fname" name = "fname" placeholder = "First Name" size = "20%" maxlength = "30" required>
+        <label for = 'mname'></label>
+        <!--(max 1 character.)-->
+            <input type = "text" id = "mname" name = "mname" placeholder = "MI" size = "3%" maxlength = "1" required>
+        <label for = 'lname'></label>
+        <!--(max 30 characters.)-->
+            <input type = "text" id = "lname" name = "lname" placeholder = "Last Name" maxlength = "30" required> <br>
+        Date of Birth:<br>
+            <input type = "text" placeholder = "MM/DD/YYYY" size = "20%" required> <br>
+        SSN:<br>
+        <!--(9-11 characters.)-->
+            <input type = "password" id = "ssn" name = "ssn" placeholder = "XXX-XX-XXXX" minlength = "9" maxlength = "11" required> <br><br>
+        Address 1:<br>
+        <!--(max 30 characters.)-->
+            <input type = "text" id = "addrone" name = "addrone" placeholder = "ex. 123 Apple St" maxlength = "30" required> <br>
+            City: 
+        <!--(max 30 characters.)-->
+            <input type = "text" id = "city" name = "city" size = "15%" placeholder = "ex. Houston" maxlength = "30" required> 
+        
+            
+            <label for "state">
+        State: 
+            <select id = "state" name = "state" size = "1" length = "10%" required> <br>
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MD">MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MS">MS</option>
+                <option value="MO">MO</option>
+                <option value="MT">MT</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NY">NY</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WV">WV</option>
+                <option value="WI">WI</option>
+                <option value="WY">WY</option>
+            </select>
+        Zip:
+        <!--(5-10 characters.)-->
+            <input type = "text" id = "zip" name = "zip" placeholder = "12345" size = "6%" minlength = "5" maxlength = "10" required> <br><br>
+        Address 2:<br>
+            <input type = "text" id = "addrtwo" name = "addrtwo" placeholder = "ex. 123 Apple St"> <br>
+        City: 
+        <!--(max 30 characters.)-->
+            <input type = "text" id = "city" name = "city" size = "15%" placeholder = "ex. Houston" maxlength = "30"> 
+        
+            
+            <label for "state">
+        State: 
+            <select id = "state" name = "state" size = "1" length = "10%" > <br>
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MD">MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MS">MS</option>
+                <option value="MO">MO</option>
+                <option value="MT">MT</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NY">NY</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WV">WV</option>
+                <option value="WI">WI</option>
+                <option value="WY">WY</option>
+            </select>
+        Zip:
+        <!--(5-10 characters.)-->
+            <input type = "text" id = "zip" name = "zip" placeholder = "12345" size = "6%" minlength = "5" maxlength = "10"> <br><br>
+        Email Address:<br>
+            <input type = "email" id = "emailaddr" name = "emailaddr" placeholder = "name@gmail.com" required> <br>
+        Phone Number:<br>
+            <input type = "text" placeholder = "123-456-7890" required> <br>
+        Emergency Name:<br>
+            <input type = "text" id = "contactname" name = "contactname" placeholder = "First, Last" required> <br>
+        Emergency Number:<br>
+            <input type = "text" id = "contactnum" name = "contactnum" placeholder = "123-456-7890" required> <br>
+        Reason For Appointment: <br>
+        <!--(3 lines x 50 columns)-->
+            <textarea id = "reason" rows = "3" cols = "40" name = "reason" placeholder = "ex. sore throat, headaches, etc." required></textarea> <br>
+
+<hr>
+        Check Vaccines You Have Had <br>
+        <input type = "checkbox"> Rubella 
+        <input type = "checkbox"> DTaP 
+        <input type = "checkbox"> Hepatitus B 
+        <input type = "checkbox"> Polio 
+        <input type = "checkbox"> Influenza 
+<hr>
+    Gender 
+    <br>
+        <input type = "radio" id = "male" name = "gender" value = "Male">
+        <label for = "Male" > Male </label> <br>
+        <input type = "radio" id = "female" name = "gender" value = "Female">
+        <label for="Female" > Female </label> <br>
+        <input type = "radio" id = "other" name = "gender" value = "Other">
+        <label for = "Other" > Other </label>
+<hr>  
+    Are you insured? 
+    <br>
+        <input type = "radio" id = "yes" name = "insured" value = "Yes">
+        <label for = "Yes" > Yes </label> <br>
+        <input type = "radio" id = "no" name = "insured" value = "No">
+        <label for="No" > No </label> <br>
+<hr>
+    How did you hear about us? 
+    <br>
+        <input type = "radio" id = "famfr" name = "heard" value = "Family/Friend">
+        <label for = "Family/Friend" > Family/Friend </label> <br>
+        <input type = "radio" id = "online" name = "heard" value = "Online/Ad">
+        <label for="Online/Ad" > Online/Ad </label> <br>
+        <input type = "radio" id = "other" name = "heard" value = "Other">
+        <label for = "Other" > Other </label>
+    
+<hr>
+How are you feeling? <br>
+    worst <input type = "range" required> best <br>
+
+<hr>
+<!--(max 20 characters.)-->
+    User ID <input type = "text" maxlength = "20" required> <br>
+    Password <input type = "password" minlength = "8" required> <br>
+    Retype Password <input type = "password" required> <br>
+
+    
+    <input type = "reset" value = "Reset"> 
+    <input type = "submit" value = "Submit">
+</form>
+    </body>
+
+<div>
+    <footer>
+        <a href = "contact.html" class = "footer-btn"> Contact Us </a>
+    </footer>
+</div>
+
+</html>
